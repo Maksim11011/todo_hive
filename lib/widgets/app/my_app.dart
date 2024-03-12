@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../group_form/group_form_widget.dart';
 import '../groups/groups_widget.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/groups': (context) => const GroupsWidget(),
+        '/groups/form': (context) => const GroupFormWidget(),
       },
       initialRoute: '/groups',
       title: 'Flutter Demo',
